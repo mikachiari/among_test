@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tst</title>
+  <style type="text/css">
+    .astronaut {
+      width: 100px;
+      height: 56px;
+      position: absolute;
+      transition-duration: .2s;
+    }
+    .astronaut img {
+      width: 100%;
+    }
+    .left_look {
+      transform: scale(-1, 1);
+    }
+    .selected p{
+      border: solid 1px darkgray;
+      border-radius: 50%;
+      margin: 0 25px;
+    }
+    .container {
+      display: flex;
+    }
+    .field {
+      border: solid 1px grey;
+      width: 800px;
+      height: 600px;
+    }
+    .log {
+      border: solid 1px lightgray;
+      height: 600px;
+      width: 400px;
+      margin-left: 20px;
+      overflow: auto;
+    }
+    p {
+      margin: 0;
+      margin-block-end: 5px;
+    }
+  </style>
+  <script type="text/javascript" src="js/movements.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="field">
+      <span id="0" class="nothing"></span>
+      <div id="1" class="astronaut">
+        <img src="pics/brown_walking.gif">
+        <p></p>
+      </div>
+      <div id="2" class="astronaut">
+        <img src="pics/pink_walking.gif">
+        <p></p>
+      </div>
+    </div>
+    <div class="log"></div>
+  </div>
+</body>
+</html>
